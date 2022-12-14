@@ -12,6 +12,7 @@ import { Auth } from "../view/pages/auth/Auth";
 function App() {
   return (
     <section className="app">
+      <Lending />
       <Routes>
         <Route path='/' element={<Lending />} />
         <Route path='/LessonsList' element={<Lesson />} />
