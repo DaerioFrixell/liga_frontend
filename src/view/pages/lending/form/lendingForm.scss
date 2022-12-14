@@ -1,0 +1,114 @@
+@import '../../../styles/generalStyles';
+@import '../../../styles/screenSize.scss';
+@import '../../../styles/colors.scss';
+
+.lf {
+  margin: 0rem auto;
+  margin-bottom: 5rem;
+  width: 50vw;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+
+    &_label {
+      padding-bottom: 1rem;
+      font-size: 18px;
+    }
+
+    &_input {
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      height: 4rem;
+
+      &:focus {
+        color: #212529;
+        background-color: #fff;
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 .25rem rgba(47, 96, 171, 0.25)
+      }
+    }
+  }
+}
+
+.lf-btn {
+  width: auto;
+  margin: auto;
+  height: 3rem;
+  background-color: $btnBackgound;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #272727ee;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $btnHover;
+  }
+
+  &:active {
+    background-color: $btnActive;
+  }
+}
+
+@media (max-width: $bigMobWidth) {
+  .lf {
+    width: 60vw;
+    height: 50vh;
+
+    &__item {
+      &_label {
+        font-size: $mobTextLittle;
+      }
+    }
+  }
+
+  .lf-btn {
+    width: 60vw;
+  }
+
+  .checkMe {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .lf {
+    width: 70vw;
+    height: 50vh;
+
+    &__item {
+      &_label {
+        font-size: $mobTextLittle;
+      }
+    }
+  }
+
+  .lf-btn {
+    width: 70vw;
+  }
+
+  .checkMe {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: $smallMobWidth) {
+  .lf {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .checkMe {
+    font-size: 1.6rem;
+  }
+
+  .lf-btn {
+    width: 90vw;
+  }
+}

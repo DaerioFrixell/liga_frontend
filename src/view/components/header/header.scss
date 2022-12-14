@@ -1,0 +1,28 @@
+@import '../../styles/generalStyles';
+@import '../../styles/screenSize.scss';
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: .5rem 7rem;
+
+  background: rgb(252, 252, 252);
+  // font-family: Monotype Corsiva;
+}
+
+@media (max-width: $bigMobWidth) {
+  .sticky {
+    position: static;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .sticky {
+    justify-content: space-around;
+    padding: .5rem;
+  }
+}

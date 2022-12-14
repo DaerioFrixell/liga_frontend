@@ -1,0 +1,57 @@
+@import '../../../styles/generalStyles';
+@import '../../../styles/screenSize.scss';
+@import '../../../styles/colors.scss';
+
+.logo {
+  &__link {
+    color: #333;
+    font-size: 5rem;
+    transition: color, 1s;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      color: rgb(95, 27, 27);
+    }
+  }
+}
+
+@media (min-width: $biggestWidth) {
+  .logo {
+    &__link {
+      font-size: $logoBig;
+    }
+  }
+}
+
+@media (max-width: $mineWidth) {
+  .logo {
+    &__link {
+      font-size: $logo;
+    }
+  }
+}
+
+@media (max-width: $notebookWidth) {
+  .logo {
+    &__link {
+      font-size: $logoSmall;
+    }
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .logo {
+    &__link {
+      font-size: $mobLogo;
+    }
+  }
+}
+
+@media (max-width: $smallMobWidth) {
+  .logo {
+    &__link {
+      font-size: $mobLogoSmall;
+    }
+  }
+}

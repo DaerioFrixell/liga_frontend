@@ -1,0 +1,137 @@
+@import "../../../styles/generalStyles";
+@import "../../../styles/screenSize.scss";
+@import "../../../styles/colors.scss";
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 93vh;
+  margin: 0 auto;
+  padding: 10% 0;
+  color: #f0eeee;
+
+  &__title {
+    font-size: $h1big;
+    padding-bottom: 5rem;
+  }
+
+  &__text {
+    padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 2.2rem;
+  }
+
+  &__button-link {
+    width: 25%;
+    background-color: rgba(249, 232, 210, 0.977);
+    border-radius: 10px;
+    color: #272727;
+    font-size: $smlText;
+    font-weight: bold;
+    text-align: center;
+    padding: .8rem;
+
+    &:hover {
+      background-color: rgb(248, 214, 170);
+    }
+
+    &:active {
+      background-color: rgb(228, 246, 154);
+    }
+  }
+
+  .hidden500 {
+    padding: 5rem 0;
+  }
+}
+
+@media (max-width: $notebookWidth) {
+  .offer {
+    &__button-link {
+      font-size: $mobTextLittle;
+    }
+  }
+}
+
+@media (max-width: $bigMobWidth) {
+  .offer {
+    padding: 5% 0;
+
+    &__title {
+      text-align: center;
+      font-size: $mobH1;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: $mobBigText;
+    }
+
+    &__button-link {
+      margin: auto;
+      width: auto;
+      font-size: $mobText;
+    }
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .offer {
+    padding: 15% 0;
+    max-width: $midMobWidth;
+
+    &__title {
+      font-size: $mobH1;
+    }
+
+    &__text {
+      font-size: $mobText;
+    }
+
+    &__button-link {
+      font-size: $mobText;
+      width: 40rem;
+      height: 3.5rem;
+    }
+  }
+}
+
+@media (max-width: $betwMobWidth) {
+  .offer {
+    max-width: $betwMobWidth;
+    padding: 30% 0;
+
+    &__title {
+      font-size: 3rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+    }
+
+    &__button-link {
+      font-size: $mobTextLittle;
+      height: auto;
+      width: 30rem;
+    }
+  }
+}
+
+@media (max-width: $smallMobWidth) {
+  .offer {
+    &__title {
+      font-size: $mobH1Small;
+    }
+
+    &__text {
+      font-size: $mobSmallText;
+    }
+
+    &__button-link {
+      font-size: $mobSmallText;
+      width: 20rem;
+    }
+  }
+}

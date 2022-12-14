@@ -1,0 +1,65 @@
+@import '../../../styles/generalStyles';
+@import '../../../styles/screenSize.scss';
+@import '../../../styles/colors.scss';
+
+.nav-icon {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+
+  &__icon-vk {
+    background-image: url(../../../styles/assets/img/vk.png);
+    background-size: cover;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 2.5rem;
+    opacity: .75;
+    transition: opacity, .3s;
+
+    &:hover {
+      opacity: 1
+    }
+  }
+
+  &__icon-yt {
+    background-image: url(../../../styles/assets/img/yt.png);
+    background-size: cover;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 2.5rem;
+    opacity: .75;
+    transition: opacity, .3s;
+
+    &:hover {
+      opacity: 1
+    }
+  }
+
+  &__phone:hover {
+    cursor: context-menu;
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .nav-info {
+    &__icon {
+      &:last-child {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $smallMobWidth) {
+  .nav-info {
+    &__icon-vk {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &__icon-yt {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

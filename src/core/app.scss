@@ -1,0 +1,55 @@
+@import '../view/styles/generalStyles.scss';
+@import '../view/styles/screenSize.scss';
+
+
+.app {
+  cursor: context-menu;
+  font-size: 2rem;
+  font-family: Trebuchet MS;
+  // font-family: Consolas;
+  // font-family: Monotype Corsiva;
+  // font-family: Mistral;
+}
+
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: $biggestWidth) {
+  .app {
+    max-width: $biggestWidth
+  }
+}
+
+@media (max-width: $mineWidth) {
+  .app {
+    max-width: $mineWidth
+  }
+}
+
+@media (max-width: $notebookWidth) {
+  .app {
+    max-width: $notebookWidth
+  }
+}
+
+@media (max-width: $bigMobWidth) {
+  .app {
+    max-width: $bigMobWidth
+  }
+}
+
+@media (max-width: $midMobWidth) {
+  .app {
+    max-width: $midMobWidth
+  }
+}
+
+@media (max-width: $smallMobWidth) {
+  .app {
+    max-width: $smallMobWidth
+  }
+}
