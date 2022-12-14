@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/liga-ts/static/css/main.66545f3c.css",
-    "main.js": "/liga-ts/static/js/main.296efebe.js",
-    "static/media/BGphoto.JPG": "/liga-ts/static/media/BGphoto.b7699ce11b0e7c3ed252.JPG",
-    "index.html": "/liga-ts/index.html",
-    "main.66545f3c.css.map": "/liga-ts/static/css/main.66545f3c.css.map",
-    "main.296efebe.js.map": "/liga-ts/static/js/main.296efebe.js.map"
+    "main.css": "/liga-ts/Lending/static/css/main.ec799e3a.css",
+    "main.js": "/liga-ts/Lending/static/js/main.296efebe.js",
+    "static/media/BGphoto.JPG": "/liga-ts/Lending/static/media/BGphoto.b7699ce11b0e7c3ed252.JPG",
+    "index.html": "/liga-ts/Lending/index.html",
+    "main.ec799e3a.css.map": "/liga-ts/Lending/static/css/main.ec799e3a.css.map",
+    "main.296efebe.js.map": "/liga-ts/Lending/static/js/main.296efebe.js.map"
   },
   "entrypoints": [
-    "static/css/main.66545f3c.css",
+    "static/css/main.ec799e3a.css",
     "static/js/main.296efebe.js"
   ]
 }
