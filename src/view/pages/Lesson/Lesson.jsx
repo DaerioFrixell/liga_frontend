@@ -16,7 +16,7 @@ export const Lesson = () => {
       <Header />
       <div className="lesson">
         <p className="lesson__num">nu</p>
-        <p className="lesson__title">title</p>
+        <p className="lesson__title">ведётся работа над добавление списка уроков</p>
 
         <div className="lesson__flex-wrapper">
           <button className="lesson__flex-wrapper__edit">edit</button>
