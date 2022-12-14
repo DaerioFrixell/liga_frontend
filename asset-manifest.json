@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/liga-ts/static/css/main.66545f3c.css",
-    "main.js": "/liga-ts/static/js/main.296efebe.js",
+    "main.js": "/liga-ts/static/js/main.57439c87.js",
     "static/media/BGphoto.JPG": "/liga-ts/static/media/BGphoto.b7699ce11b0e7c3ed252.JPG",
     "index.html": "/liga-ts/index.html",
     "main.66545f3c.css.map": "/liga-ts/static/css/main.66545f3c.css.map",
-    "main.296efebe.js.map": "/liga-ts/static/js/main.296efebe.js.map"
+    "main.57439c87.js.map": "/liga-ts/static/js/main.57439c87.js.map"
   },
   "entrypoints": [
     "static/css/main.66545f3c.css",
-    "static/js/main.296efebe.js"
+    "static/js/main.57439c87.js"
   ]
 }
