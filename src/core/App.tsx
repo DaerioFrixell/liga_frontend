@@ -1,13 +1,13 @@
 import React from "react";
-import Lending from '../view/pages/lending/Lending';
 import {
   Routes,
   Route,
 } from "react-router-dom";
 import './app.scss'
-import { Lesson } from "../view/pages/Lesson/Lesson";
-import { NewFB } from "../view/pages/feedbacks/NewFB";
-import { Auth } from "../view/pages/auth/Auth";
+import { Lesson } from "../pages/Lesson/Lesson";
+import { NewFB } from "../pages/feedbacks/NewFB";
+import { Auth } from "../pages/auth/Auth";
+import Lending from "../pages/lending/Lending";
 
 function App() {
   return (

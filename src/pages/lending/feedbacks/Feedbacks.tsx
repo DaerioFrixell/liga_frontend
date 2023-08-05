@@ -1,18 +1,11 @@
 import { useEffect, useState } from "react";
 import "./feedbacks.scss";
-// import { Feedback } from "./feedback/Feedback";
-import { createFeedback } from "../../../../api/feedbackApi";
-import { useTypedSelector } from "../../../../hooks/useTypedSelector";
-// import { useAction } from "../../../../hooks/useAction";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
+import { createFeedback } from "../../../api/feedbackApi";
 
 
 export const Feedbacks = () => {
-  // const { fetchFeedbacks } = useAction()
-  useEffect(() => {
-    // fetchFeedbacks()
-  }, [])
-
-  const { loading, error } = useTypedSelector(state => state.feedback)
+  const { loading, error } = useTypedSelector((state: any) => state.feedback)
   if (loading) { <h1>Идёт загрузка...</h1> }
   if (error) { <h1>{error}</h1> }
 

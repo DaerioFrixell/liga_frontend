@@ -3,8 +3,7 @@ import "./navbar.scss";
 import { Link } from "react-scroll";
 import { linkDuration, linkOffset } from "../../../styles/setting/smoothLink"
 import { Menu } from "../../UI/menu/Menu";
-import useToggle from "../../../../hooks/useToggle";
-// import { Link as ReactLink } from "react-router-dom";
+import useToggle from "../../../hooks/useToggle";
 
 export const Navbar = () => {
   const { isOpen, toggle } = useToggle()

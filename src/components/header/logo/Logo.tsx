@@ -1,7 +1,4 @@
-import React from "react";
 import "./logo.scss";
-import { Link } from "react-scroll";
-import { linkDuration } from "../../../styles/setting/smoothLink"
 import { Link as ReactLink } from "react-router-dom";
 
 function Logo() {

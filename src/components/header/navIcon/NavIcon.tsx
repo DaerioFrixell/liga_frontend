@@ -1,6 +1,4 @@
-import React from "react";
 import './navIcon.scss';
-import { Link } from "react-scroll";
 
 export const NavIcon = () => {
   return (
