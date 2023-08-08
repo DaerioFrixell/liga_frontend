@@ -1,5 +1,5 @@
-import { $fakehost, $host } from "../../core/url";
+import { $fakehost, api } from "../../core/api";
 
-export const getFeedbacksApi = async () => $host('/api/feedback');
+export const getFeedbacksApi = async () => api('/api/feedback');
 
 
