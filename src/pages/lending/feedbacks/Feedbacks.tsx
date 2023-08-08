@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./feedbacks.scss";
-import { useTypedSelector } from "../../../hooks/useTypedSelector";
 import { createFeedback } from "../../../api/feedbackApi";
+import { useTypedSelector } from "../../../hooks/useTypedSelector";
 
 
 export const Feedbacks = () => {

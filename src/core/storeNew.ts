@@ -1,15 +1,16 @@
-// import { configureStore } from '@reduxjs/toolkit'
-// // ...
+import { configureStore } from '@reduxjs/toolkit'
+import { feedbacksReducer } from '../models/feedbacks/feedbacksReducer'
+import { lessonsReducer } from '../models/lessons/lessonsReducer'
+import { newfeedbacksReducer } from '../models/newFB/newFeedbacksReducer'
 
-// const store = configureStore({
-//   reducer: {
-//     posts: postsReducer,
-//     comments: commentsReducer,
-//     users: usersReducer
-//   }
-// })
+const newStore = configureStore({
+  reducer: {
+    newfeedbacksReducer,
+    lessonsReducer
+  }
+})
 
-// // Infer the `RootState` and `AppDispatch` types from the store itself
-// export type RootState = ReturnType<typeof store.getState>
-// // Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
-// export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof newStore.getState>
+export type AppDispatch = typeof newStore.dispatch
+
+export default newStore

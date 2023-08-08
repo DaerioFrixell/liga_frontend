@@ -2,12 +2,12 @@ import ReactDOM from 'react-dom/client';
 import App from './core/App';
 import { Provider } from "react-redux";
 import { BrowserRouter } from 'react-router-dom';
-import store from './core/store';
 import './index.scss'
+import newStore from './core/storeNew';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
-  <Provider store={store} >
+  <Provider store={newStore} >
     <BrowserRouter>
       <App />
     </BrowserRouter>
