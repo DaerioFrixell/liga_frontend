@@ -5,13 +5,13 @@ const initialState = {
   feedbacks: [
     {
       id: 1,
-      name: "jon",
-      text: "Hi! It's the best lesson I have!"
+      author: "jon",
+      description: "Hi! It's the best lesson I have!"
     },
     {
       id: 2,
-      name: "aliza",
-      text: "Hi! It's worse lesson I have!"
+      author: "aliza",
+      description: "Hi! It's worse lesson I have!"
     }
   ]
 }
@@ -28,8 +28,8 @@ export const newfeedbacksReducer = (state = initialState, action: any) => {
         feedbacks: [
           {
             id: 3,
-            name: "aliza",
-            text: "Hi! It's worse lesson I have!"
+            author: "aliza",
+            description: "Hi! It's worse lesson I have!"
           }
         ]
       }
