@@ -1,6 +1,11 @@
 @import '../../../styles/generalStyles.scss';
 
 .addFeedback {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  min-height: 100px;
+  margin-bottom: 3rem;
+
   &__name {
     display: grid;
     grid-column: 1/2;

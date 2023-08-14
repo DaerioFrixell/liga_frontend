@@ -26,9 +26,7 @@ export const Feedbacks = () => {
   return (
     <section className="feedbacks">
       <h2 className="we">Отзывы</h2>
-      <div className="feedbacks__add"  >
 
-      </div>
     </section>
   )
 }
