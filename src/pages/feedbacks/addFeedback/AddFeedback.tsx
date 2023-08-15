@@ -1,20 +1,23 @@
-import { useDispatch } from "react-redux"
 import { createFeedback } from "../../../api/feedbackApi"
 import "./addFeedback.scss"
 import { useState, FC, } from "react"
+import { useAppDispatch } from "../../../hooks/useDispatch"
+import { useDispatch } from "react-redux"
+import { addNewFeedbackAction } from "../../../models/newFB/newFeedbacksAction"
 
 
 export const AddFeedback: FC = () => {
   const [author, setAuthor] = useState("")
   const [description, setDescription] = useState("")
-  const { } = useDispatch()
+  const dispatch = useDispatch()
 
   const addNewFeedback = () => {
-    // createFeedback({ id: 5, author: author, description: description })
-    // dispatch(addFeedbackAction({
-    //   author,
-    //   description,
-    // }));
+    const feedback = {
+      id: 5,
+      author,
+      description,
+    }
+    dispatch(addNewFeedbackAction(feedback));
     setAuthor("")
     setDescription("")
   }

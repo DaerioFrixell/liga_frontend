@@ -23,15 +23,16 @@ export const newfeedbacksReducer = (state = initialState, action: any) => {
         ...state
       }
     case ONE_MORE_FB:
+
       return {
         ...state,
-        feedbacks: [
-          {
-            id: 3,
-            author: "aliza",
-            description: "Hi! It's worse lesson I have!"
-          }
-        ]
+        feedbacks: [...state.feedbacks, {
+          id: 3,
+          author: "qwe",
+          description: "Hi! It's worse lesson I have! qwe"
+        }]
+
+
       }
 
     default: return state

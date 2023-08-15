@@ -1,5 +1,4 @@
 import { configureStore } from '@reduxjs/toolkit'
-import { feedbacksReducer } from '../models/feedbacks/feedbacksReducer'
 import { lessonsReducer } from '../models/lessons/lessonsReducer'
 import { newfeedbacksReducer } from '../models/newFB/newFeedbacksReducer'
 
