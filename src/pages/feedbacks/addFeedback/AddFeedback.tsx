@@ -1,10 +1,10 @@
-import { createFeedback } from "../../../api/feedbackApi"
 import "./addFeedback.scss"
 import { useState, FC, } from "react"
-import { useAppDispatch } from "../../../hooks/useDispatch"
 import { useDispatch } from "react-redux"
 import { addNewFeedbackAction } from "../../../models/newFB/newFeedbacksAction"
 
+
+/** добавление отзывов в DB не реализовано сейчас */
 
 export const AddFeedback: FC = () => {
   const [author, setAuthor] = useState("")
