@@ -1,9 +1,9 @@
-import React from "react";
+import { FC } from "react";
 import { Link } from "react-scroll";
-import { linkDuration, linkOffset } from "../../../styles/setting/smoothLink";
+import { linkDuration, linkOffset } from "../../../utils/settingScroll";
 import "./offer.scss";
 
-export const Offer = () => {
+export const Offer: FC = () => {
   return (
     <div className="offer">
       <h1 className="offer__title">Уроки игры на гитаре</h1>

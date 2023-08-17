@@ -1,7 +1,7 @@
-import React from "react";
+import { FC } from "react";
 import "./availableTime.scss";
 
-export const AvailableTime = () => {
+export const AvailableTime: FC = () => {
   return (
     <div id="availableTimeBlock" className="time">
       <h2 className="time__title">доступное время</h2>
@@ -33,11 +33,6 @@ export const AvailableTime = () => {
           <p className="time__list__day__item ">19:30</p>
         </div>
       </div>
-
     </div>
-
-
-
-
   )
 }
