@@ -18,7 +18,7 @@ export const Navbar: FC = () => {
         {isOpen && (
           <div className="menu" onMouseLeave={() => toggle()}>
             {menuLinks.map(l =>
-              <Link to={l.to} className="menu-link" >
+              <Link key={l.to} to={l.to} className="menu-link" >
                 {l.text}
               </Link>
             )}
@@ -27,7 +27,7 @@ export const Navbar: FC = () => {
       </div>
 
       {scrollLinks.map(l =>
-        <p>
+        <p key={l.to}>
           <ScrollLink
             className="navbar__link"
             activeClass="navbar__link--active"

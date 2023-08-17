@@ -8,7 +8,7 @@ export const Header = () => {
     <header className="sticky">
       <Logo />
       <Navbar />
-      <NavIcon />
+      {/* <NavIcon /> */}
     </header>
   );
 }
