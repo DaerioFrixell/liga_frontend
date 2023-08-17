@@ -1,7 +1,7 @@
 import "./addFeedback.scss"
 import { useState, FC, } from "react"
 import { useDispatch } from "react-redux"
-import { addNewFeedbackAction } from "../../../models/newFB/newFeedbacksAction"
+import { addNewFeedbackAction } from "../../../models/feedbacks/newFeedbacksAction"
 
 
 /** добавление отзывов в DB не реализовано сейчас */

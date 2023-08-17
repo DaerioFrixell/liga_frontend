@@ -7,7 +7,7 @@ import './app.scss'
 import { Lesson } from "../pages/Lesson/Lesson";
 import { Auth } from "../pages/auth/Auth";
 import Lending from "../pages/lending/Lending";
-import { AllFeedbacks } from "../pages/feedbacks/AllFeedbacks";
+import { AllFeedbacks } from "../pages/lending/feedbacks/AllFeedbacks";
 
 function App() {
   return (

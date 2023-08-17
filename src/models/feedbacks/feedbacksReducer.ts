@@ -1,35 +1,35 @@
-import { FeedbackAction, FeedbackActionType, FeedbackState } from "./feedbackTypes"
-
+import {
+  FeedbackActionType,
+} from "./types/actionTypes"
+import { mockFeedbacks } from "./mockFeedbacks"
+import { FeedbackState } from "./types/redux"
 
 
 const initialState: FeedbackState = {
-  feedbacks: [],
-  loading: false,
-  error: null
+  feedbacks: mockFeedbacks
 }
 
-export const feedbacksReducer = (
-  state = initialState,
-  action: FeedbackAction): FeedbackState => {
+export const feedbacksReducer = (state = initialState, action: any) => {
   switch (action.type) {
-    case FeedbackActionType.FETCH_FEEDBACKS:
+    case FeedbackActionType.VIEW:
       return {
-        loading: true,
-        error: null,
-        feedbacks: []
+        /** тут обращение к бэку, чтобы получить отзывы.
+         * бэка пока нет.
+         * сменить Type у Action на понятное название
+         */
+        ...state
       }
-    case FeedbackActionType.FETCH_FEEDBACKS_SUCCESS:
+
+    case FeedbackActionType.ONE_MORE_FB:
       return {
-        loading: false,
-        error: null,
-        feedbacks: action.payload
+        ...state,
+        feedbacks: [...state.feedbacks, {
+          id: 6,
+          author: "qwe",
+          description: "Hi! It's worse lesson I have! qwe"
+        }]
       }
-    case FeedbackActionType.FETCH_FEEDBACKS_ERROR:
-      return {
-        loading: false,
-        error: action.payload,
-        feedbacks: []
-      }
+
     default: return state
   }
 }

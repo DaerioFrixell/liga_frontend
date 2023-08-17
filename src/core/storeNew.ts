@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { lessonsReducer } from '../models/lessons/lessonsReducer'
-import { newfeedbacksReducer } from '../models/newFB/newFeedbacksReducer'
+import { feedbacksReducer } from '../models/feedbacks/feedbacksReducer'
 
 const newStore = configureStore({
   reducer: {
-    newfeedbacksReducer,
+    feedbacksReducer,
     lessonsReducer
   }
 })

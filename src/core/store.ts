@@ -1,5 +1,4 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { feedbacksReducer } from '../models/feedbacks/feedbacksReducer';
 import { lessonsReducer } from '../models/lessons/lessonsReducer';
 import thunk from "redux-thunk";
 
@@ -12,7 +11,6 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
   : compose;
 
 const rootReducer = combineReducers({
-  feedback: feedbacksReducer,
   lessons: lessonsReducer
 })
 

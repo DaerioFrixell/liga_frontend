@@ -1,0 +1,9 @@
+export enum FeedbackActionType {
+  VIEW = "viewFeedback",
+  ONE_MORE_FB = "one-more-feedback",
+
+  FETCH_FEEDBACKS = "FETCH_FEEDBACKS",
+  FETCH_FEEDBACKS_SUCCESS = "FETCH_FEEDBACKS_SUCCESS",
+  FETCH_FEEDBACKS_ERROR = "FETCH_FEEDBACKS_ERROR"
+}
+
