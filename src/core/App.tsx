@@ -6,8 +6,7 @@ import {
 import './app.scss'
 import { Lesson } from "../pages/Lesson/Lesson";
 import { Auth } from "../pages/auth/Auth";
-import Lending from "../pages/lending/Lending";
-import { AllFeedbacks } from "../pages/lending/feedbacks/AllFeedbacks";
+import { Lending } from "../pages/lending/Lending";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Lending />} />
         <Route path='/LessonsList' element={<Lesson />} />
-        <Route path='/Feedbacks' element={<AllFeedbacks />} />
         <Route path='/Auth' element={<Auth />} />
       </Routes>
     </section>

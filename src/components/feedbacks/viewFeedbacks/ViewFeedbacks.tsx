@@ -1,10 +1,10 @@
 import "./viewFeedbacks.scss"
 import { FC, useState } from "react"
 import { FeedbackItem } from "./feedbackItem/FedbackItem"
+import { HandleFeedback } from "../handleFeedback/HandleFeedback"
+import { T_ViewFeedbacks } from "../types"
 
-type T_ViewFeedbacks = {
-  feedbacks: any[]
-}
+
 export const ViewFeedbacks: FC<T_ViewFeedbacks> = ({ feedbacks }) => {
   const [feedbackNumber, setFeedbackNumber] = useState(0)
 
@@ -16,8 +16,10 @@ export const ViewFeedbacks: FC<T_ViewFeedbacks> = ({ feedbacks }) => {
         description={feedbacks[feedbackNumber].description}
       />
 
-      <button onClick={() => setFeedbackNumber(feedbackNumber + 1)}>next feeback</button>
-      <button onClick={() => setFeedbackNumber(feedbackNumber - 1)}>prev feeback</button>
+      <HandleFeedback
+        feedbackNumber={feedbackNumber}
+        handle={setFeedbackNumber}
+      />
     </>
   )
 }
