@@ -10,28 +10,6 @@ import { Link } from "react-router-dom";
 export const Navbar: FC = () => {
   const { isOpen, toggle } = useToggle()
 
-  const allScrollLinks = scrollLinks.map(l =>
-    <p>
-      <ScrollLink
-        className="navbar__link"
-        activeClass="navbar__link--active"
-        to={l.to}
-        smooth={true}
-        spy={true}
-        duration={linkDuration}
-        offset={linkOffset}
-      >
-        {l.text}
-      </ScrollLink>
-    </p>
-  )
-
-  const allMenuLinks = menuLinks.map(l =>
-    <Link to={l.to} className="menu-link" >
-      {l.text}
-    </Link>
-  )
-
   return (
     <nav className="navbar">
       <div >
@@ -39,12 +17,30 @@ export const Navbar: FC = () => {
 
         {isOpen && (
           <div className="menu" onMouseLeave={() => toggle()}>
-            {allMenuLinks}
+            {menuLinks.map(l =>
+              <Link to={l.to} className="menu-link" >
+                {l.text}
+              </Link>
+            )}
           </div>
         )}
       </div>
 
-      {allScrollLinks}
+      {scrollLinks.map(l =>
+        <p>
+          <ScrollLink
+            className="navbar__link"
+            activeClass="navbar__link--active"
+            to={l.to}
+            smooth={true}
+            spy={true}
+            duration={linkDuration}
+            offset={linkOffset}
+          >
+            {l.text}
+          </ScrollLink>
+        </p>
+      )}
     </nav >
   );
 }
